@@ -475,11 +475,7 @@ console.log(firstNamesAllCaps);
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue. We need a filtered version of the runners array, containing only those runners with large sized shirts so they can choose a different size. This will be an array of objects.
 let runnersLargeSizeShirt = runners.filter(cb => {
-  if (cb.shirt_size === "L") {
-    return true;
-  } else {
-    return false;
-  }
+  return cb.shirt_size === "L";
 });
 console.log(runnersLargeSizeShirt);
 
